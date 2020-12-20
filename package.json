@@ -1,0 +1,21 @@
+{
+  "name": "chatty",
+  "version": "1.0.0",
+  "description": "real time chatting web application",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "devstart": "nodemon server.js"
+  },
+  "author": "shreyanshi shukla",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.11.8",
+    "socket.io": "^3.0.4"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style2.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            chatty+logo 
+            <a  href="/" id="leavebtn">LEAVE</a>
+        </div>
+    <div class="parent">
+        <div class="roominfo">
+
+        </div>
+        <div class="parent2">
+        <div class="textarea" id="textarea">
+           
+        </div>
+    
+        <div class="typingarea">
+            <form id="chatform">
+            <textarea id="message"  placeholder="Enter your message"  ></textarea>
+            <button id="sendbtn" type="send"><img src="/send.png"></button></form></div> </div>
+        </div>
+        </div>
+<script>
+    const username="<%= username %> "
+    const room="<%= room %>"
+    
+</script>
+<script src="/socket.io/socket.io.js"></script>
+<script defer src="main.js"></script>
+    
+</body>
+</html>
