@@ -1,5 +1,5 @@
 # chatty
-Web based chatting application based nodejs and socket.io
+Web chatting application based on nodejs and socket.io
 
 ###
 UNDERCONSTRUCTION :hammer:
