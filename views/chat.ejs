@@ -11,6 +11,7 @@
         <div class="header">
             chatty+logo 
             <a  href="/" id="leavebtn">LEAVE</a>
+            <p><%=room %></p>
         </div>
     <div class="parent">
         <div class="roominfo">
@@ -23,7 +24,7 @@
     
         <div class="typingarea">
             <form id="chatform">
-            <textarea id="message"  placeholder="Enter your message"  ></textarea>
+            <textarea id="message"  placeholder="<%= username %>"  ></textarea>
             <button id="sendbtn" type="send"><img src="/send.png"></button></form></div> </div>
         </div>
         </div>

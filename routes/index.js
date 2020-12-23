@@ -48,7 +48,7 @@ router.post('/joinrooms',async (req,res)=>{
 router.post('/:room',async (req,res)=>{
   
 
-         res.render('chat.ejs',{username:req.body.username,room:req.params.room})
+         res.render('chat.ejs',{username:req.body.name,room:req.params.room})
         
 
  

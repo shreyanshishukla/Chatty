@@ -4,6 +4,7 @@ const socket=io();
 const textarea=document.getElementById('textarea');
 const typingarea=document.getElementsByClassName('typingarea');
 const chatform=document.getElementById('chatform');
+console.log(username)
 
 chatform.addEventListener('submit',(e)=>
 { e.preventDefault();
@@ -40,6 +41,7 @@ socket.on('joining',(message)=>{
    
     let msg=document.createElement('div');
     msg.innerHTML=`<p>${message}</p><br>`;
+    console.log(message)
    
   
     textarea.append(msg);
@@ -60,11 +62,13 @@ msg.innerHTML=`<p>${message}</p>`;
 
 textarea.append(msg);
 });
-socket.on('disconnected',message=>{
-    let msg=document.createElement('div');
-    msg.innerHTML=`<p>${message}</p><br>`;
-   
+socket.on('disconnected',(uname)=>{
+    const msg= document.createElement('div')  
+    msg.innerHTML=`<p>${uname} left</p><br>`;
   
-    textarea.append(msg);
+    
+   textarea.append(msg)
 
 });
+
+
