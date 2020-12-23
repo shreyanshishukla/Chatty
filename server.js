@@ -4,7 +4,7 @@ const app=express()
 const http=require('http')
 const server=http.createServer(app)
 const mongoose=require('mongoose')
-mongoose.connect(envmongo,{ useNewUrlParser: true,useUnifiedTopology: true })
+mongoose.connect('mongodb+srv://shreyanshi:2ob1nM0SGEOyVyzA@cluster0.jddx8.mongodb.net/chatty?retryWrites=true&w=majority',{ useNewUrlParser: true,useUnifiedTopology: true })
 
 
 const socketio=require('socket.io')(server)

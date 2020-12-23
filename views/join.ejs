@@ -1,0 +1,13 @@
+  <form action="/:<%=room.rooms %>" method="post">
+    <% if (typeof room.msg != undefined) {%>
+        <%= room.msg %><br>
+        <%}%>
+    <input name="name" type="text " />
+    <label><%=room.rooms%></label>
+    <br>
+    <br>
+    <input type="submit" value="submit" />
+    
+  </form>
+       
+  

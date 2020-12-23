@@ -8,31 +8,27 @@
 </head>
 <body>
     <div class="box">
-     <form method="POST" action="/chatty">
         <div class="newroom">
-            <label>Create NEW ROOM
-            </label>
-            <br>
-
-            <input name="room" type="text " />
-
+            <a href="/createroom">Create NEW ROOM
+        </a>
         </div>
         <br>
+   
         <div class="roomlist">
-           
+         <% if (allrooms!=null) {%>
+            <% allrooms.forEach(R=>{%>
+            
+        <label> <%=R.rooms%></label>
+        <a href="/:<%=R.rooms%>" >join <%=R.rooms%></a>
+        <br>
+    <%})}%>
          
       
             
 
          </div>
          <br>
-         <div class="username">
-            <label>NAME</label>
-            <br>
-            
-            <input name="username" placeholder="Enter your name" type="text" required> 
-            <button type="submit" class="namesubmit">SUBMIT</button>
-         </div>
+       
     </div>
     
 </body>
